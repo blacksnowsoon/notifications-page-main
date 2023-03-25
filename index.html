@@ -20,9 +20,9 @@
       <div class="header">
         <div>
           <h1>Notifications</h1>
-          <span>3</span>
+          <span id="num-of-notifications">3</span>
         </div>
-        <button>Markall as read</button>
+        <button id="mark-read">Markall as read</button>
       </div>
       <div class="message">
         <img src="./assets/images/avatar-mark-webber.webp" alt="">
@@ -38,7 +38,10 @@
       <div class="message">
         <img src="./assets/images/avatar-angela-gray.webp" alt="">
         <div class="content">
-          <p><Strong>Angela Gray</Strong> followed you <span class="new">🔴</span></p> 
+          <p>
+            <Strong>Angela Gray</Strong>
+            followed you 
+            <span class="new">🔴</span></p> 
           <div>5m ago</div>
         </div>
       </div>
@@ -56,6 +59,7 @@
       <div class="message">
         <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky">
         <div class="content">
+          
           <p>
             <Strong>Rizky Hasanuddin</Strong>
             sent you a private message
@@ -79,7 +83,7 @@
           </p> 
           <p>1 week ago</p>
         </div>
-        <img src="./assets/images/image-chess.webp" alt="image-chess">
+        <a href=""><img src="./assets/images/image-chess.webp" alt="image-chess"></a>
       </div>
       <div class="message">
         <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar-kimberly-smith">
@@ -113,5 +117,16 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/blacksnowsoon">Gharieb Khalifa</a>.
   </div>
+  <script>
+    const markBtn = document.getElementById('mark-read')
+    
+    markBtn.addEventListener('click', ()=>{
+      const newNotifications = document.querySelectorAll('.new')
+      for (const notification of newNotifications) {
+        notification.classList.add('hide')
+      }
+      document.getElementById('num-of-notifications').innerText = '0'
+    })
+  </script>
 </body>
 </html>
