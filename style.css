@@ -1,0 +1,93 @@
+:root {
+  /* premiery */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  /* colores */
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+  Font-size: 16px;
+  background: var(--Light-grayish-blue-2);
+}
+.notifications-container {
+  background: var(--White);
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 1rem;
+  display: grid;
+  gap: 20px;
+
+}
+.header span {
+  outline: 1px solid;
+  padding:.5em;
+  border-radius: 5px;
+  background: var(--Very-dark-blue);
+  color: var(--Very-light-grayish-blue);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  outline: 1px solid;
+}
+.header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header button {
+  justify-self: end;
+  background: transparent;
+  outline: transparent;
+  border: transparent;
+  color: var(--Blue);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.message {
+  background: var(--Light-grayish-blue-2);
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 1em;
+}
+.content p {
+  margin: .3rem auto;
+}
+.message img {
+  aspect-ratio: 1;
+  max-width: 50px;
+}
+.content {
+  flex: 1;
+  color: var(--Dark-grayish-blue);
+}
+.content .new {
+  font-size: 10px;
+}
+.content > p > strong {
+  color: var(--Blue);
+  cursor: pointer;
+}
+.content a{
+  text-decoration: none;
+  color: var(--Blue);
+}
+.nested-messages {
+  padding: 1em;
+  background: var(--Very-light-grayish-blue);
+  border-radius: 10px;
+  
+}
+.hide {display: none;}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
