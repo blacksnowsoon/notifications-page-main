@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-!["./screenshot/Screenshot Frontend Mentor Notifications page.png"](./screenshot.jpg)
+![FrontendMentorNotificationspage](./screenshot/Screenshot%20FrontendMentorNotificationspage.png)
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/blacksnowsoon/notifications-page-main)
